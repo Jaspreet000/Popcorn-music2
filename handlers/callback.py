@@ -10,8 +10,8 @@ from handlers.play import cb_admin_check
 @Client.on_callback_query(filters.regex("cbstart"))
 async def cbstart(_, query: CallbackQuery):
     await query.edit_message_text(
-        f"""<b>✨ **welcome sir, i am {query.message.from_user.mention}** \n
-**[{BOT_NAME}](https://t.me/{BOT_USERNAME}) 𝗮𝗹𝗹𝗼𝘄 𝘆𝗼𝘂 𝘁𝗼 𝗽𝗹𝗮𝘆 𝗺𝘂𝘀𝗶𝗰 𝗼𝗻 𝗴𝗿𝗼𝘂𝗽𝘀 𝘁𝗵𝗿𝗼𝘂𝗴𝗵 𝘁𝗵𝗲 𝗻𝗲𝘄 𝗧𝗲𝗹𝗲𝗴𝗿𝗮𝗺'𝘀 𝘃𝗼𝗶𝗰𝗲 𝗰𝗵𝗮𝘁𝘀 𝐩𝐨𝐰𝐞𝐫𝐞𝐝 𝐛𝐲 𝗺𝗼𝗻𝘀𝘁𝗮𝗿 !**
+        f"""<b>✨ **welcome ladies/gentleman, i am {query.message.from_user.mention}** \n
+**[{BOT_NAME}](https://t.me/{BOT_USERNAME}) 𝗮𝗹𝗹𝗼𝘄 𝘆𝗼𝘂 𝘁𝗼 𝗽𝗹𝗮𝘆 𝗺𝘂𝘀𝗶𝗰 𝗼𝗻 𝗴𝗿𝗼𝘂𝗽𝘀 𝘁𝗵𝗿𝗼𝘂𝗴𝗵 𝘁𝗵𝗲 𝗻𝗲𝘄 𝗧𝗲𝗹𝗲𝗴𝗿𝗮𝗺'𝘀 𝘃𝗼𝗶𝗰𝗲 𝗰𝗵𝗮𝘁𝘀 𝐩𝐨𝐰𝐞𝐫𝐞𝐝 𝐛𝐲 Jass !**
 
 **𝗙𝗶𝗻𝗱 𝗼𝘂𝘁 𝗮𝗹𝗹 𝘁𝗵𝗲 𝗕𝗼𝘁'𝘀 𝗰𝗼𝗺𝗺𝗮𝗻𝗱𝘀 𝗮𝗻𝗱 𝗵𝗼𝘄 𝘁𝗵𝗲𝘆 𝘄𝗼𝗿𝗸 𝗯𝘆 𝗰𝗹𝗶𝗰𝗸𝗶𝗻𝗴 𝗼𝗻 𝘁𝗵𝗲 » 📚 𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀 𝗯𝘂𝘁𝘁𝗼𝗻 !**
 
@@ -30,19 +30,19 @@ async def cbstart(_, query: CallbackQuery):
                          "Commands", callback_data="cbcmds"
                     ),
                     InlineKeyboardButton(
-                        "Owner", url=f"https://t.me/Tithonus")
+                        "Owner", url=f"https://t.me/jass3212")
                 ],[
                     InlineKeyboardButton(
-                        "Support", url=f"https://t.me/StylishUser"
+                        "Support", url=f"https://t.me/JasmineSupportGroup"
                     ),
                     InlineKeyboardButton(
-                        "Updates", url=f"https://t.me/monstar_0")
+                        "Updates", url=f"https://t.me/jass_robot_query")
                 ],[
                     InlineKeyboardButton(
-                        "Chatting Group", url="https://t.me/EnglishChatting_Club")
+                        "Chatting Group", url="https://t.me/linkchatting")
                 ],[
                     InlineKeyboardButton(
-                        "💥 Source Code 💫", url="https://github.com/mohsinhsn/popcorn-music2"
+                        "💥 Source Code 💫", url="https://github.com/Jaspreet000/jasmine-music"
                     )
                 ]
             ]
@@ -54,7 +54,7 @@ async def cbstart(_, query: CallbackQuery):
 @Client.on_callback_query(filters.regex("cbhelp"))
 async def cbhelp(_, query: CallbackQuery):
     await query.edit_message_text(
-        f"""<b>Hello there, welcome to the help menu Powered by @stylishuser !</b>
+        f"""<b>Hello there, welcome to the help menu Powered by @jass3212 !</b>
 
 **in this menu you can open several available command menus, in each command menu there is also a brief explanation of each command**
 
@@ -97,7 +97,7 @@ async def cbbasic(_, query: CallbackQuery):
     await query.edit_message_text(
         f"""<b> here is the basic commands</b>
 
-🎧 [ Xplayer group commands ]
+🎧 [ Jasmine 2.0 group commands ]
 
 /play (song name) - play song from youtube directly.
 /aplay (reply to audio) - play song using audio file
@@ -109,7 +109,7 @@ async def cbbasic(_, query: CallbackQuery):
 /lyric - (song name) lyrics scrapper
 /vk (song name) - download song from inline mode
 
-🎧 [ Xplayer channel commands ]
+🎧 [ Jasmine 2.0 channel commands ]
 
 /cplay - stream music on channel voice chat
 /cplayer - show the song in streaming
