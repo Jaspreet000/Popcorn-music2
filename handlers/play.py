@@ -467,7 +467,7 @@ async def ytplay(_, message: Message):
                 except Exception:
                     # print(e)
                     await lel.edit(
-                        f"<b>Flood wait error\n{user.first_name} Xplayer assistant is not in your chat."
+                        f"<b>Flood wait error\n{user.first_name} Jasmine assistant is not in your chat."
                         f"\n\n try to @{ASSISTANT_NAME} Add manually</b>",
                     )
     try:
@@ -487,7 +487,7 @@ async def ytplay(_, message: Message):
     for i in message.command[1:]:
         query += " " + str(i)
     print(query)
-    await lel.edit("🎵** Connecting to YouTube Server...\nVia Xplayer**")
+    await lel.edit("🎵** Connecting to YouTube Server...\nVia Jasmine 2.0**")
     ydl_opts = {"format": "bestaudio[ext=m4a]"}
     try:
         results = YoutubeSearch(query, max_results=1).to_dict()
@@ -514,9 +514,9 @@ async def ytplay(_, message: Message):
         [
             [
                 InlineKeyboardButton("Ⓜ️enu", callback_data="menu"),
-                InlineKeyboardButton("📣Channel", url=f"https://t.me/monstar_0"),
+                InlineKeyboardButton("📣Channel", url=f"https://t.me/jass_robot_query"),
             ],[
-                InlineKeyboardButton("✨Support", url=f"https://t.me/StylishUser"),
+                InlineKeyboardButton("✨Support", url=f"https://t.me/JasmineSupportGroup"),
                 InlineKeyboardButton("❌ Close", callback_data="cls")
             ],
         ]
@@ -536,7 +536,7 @@ async def ytplay(_, message: Message):
         await message.reply_photo(
             photo="final.png",
             caption = f"🎵**Name:** [{title[:25]}]({url})\n⏱ **Duration:** `{duration}`\n😊 **Status:** `Queued in position {position}`\n" \
-                    + f"🎧 **Stylish user by:** {message.from_user.mention}",
+                    + f"🎧 **Requested by:** {message.from_user.mention}",
                    reply_markup=keyboard,
         )
         os.remove("final.png")
