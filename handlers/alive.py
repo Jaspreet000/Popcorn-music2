@@ -43,7 +43,7 @@ async def alive(client: Client, message: Message):
         photo=f"{BOT_IMG}",
         caption=f"""**➮x Hi i am [{BOT_NAME}](https://t.me/{BOT_USERNAME})**
 
-➮ **Xplayer working**
+➮ **Jasmine 2.0 working**
 
 ➮ **popcorn music version : 2.0 Lҽƚҽʂƚ**
 
@@ -51,7 +51,7 @@ async def alive(client: Client, message: Message):
 
 ➮ **service uptime : `{uptime}`**
 
-**thanks for using xplayer ♥️**""",
+**thanks for using Jasmine 2.0 ♥️**""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
