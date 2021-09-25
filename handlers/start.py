@@ -33,7 +33,7 @@ async def _human_time_duration(seconds):
 async def start_(client: Client, message: Message):
     await message.reply_text(
         f"""<b>✨ **𝘄𝐞𝐥𝐜𝐨𝐦𝐞 {message.from_user.first_name}** \n
-**[{BOT_NAME}](https://t.me/{BOT_USERNAME}) 𝗮𝗹𝗹𝗼𝘄 𝘆𝗼𝘂 𝘁𝗼 𝗽𝗹𝗮𝘆 𝗺𝘂𝘀𝗶𝗰 𝗼𝗻 𝗴𝗿𝗼𝘂𝗽𝘀 𝘁𝗵𝗿𝗼𝘂𝗴𝗵 𝘁𝗵𝗲 𝗻𝗲𝘄 𝗧𝗲𝗹𝗲𝗴𝗿𝗮𝗺'𝘀 𝘃𝗼𝗶𝗰𝗲 𝗰𝗵𝗮𝘁𝘀 𝐩𝐨𝐰𝐞𝐫𝐞𝐝 𝐛𝐲 𝗺𝗼𝗻𝘀𝘁𝗮𝗿 !**
+**[{BOT_NAME}](https://t.me/{BOT_USERNAME}) 𝗮𝗹𝗹𝗼𝘄 𝘆𝗼𝘂 𝘁𝗼 𝗽𝗹𝗮𝘆 𝗺𝘂𝘀𝗶𝗰 𝗼𝗻 𝗴𝗿𝗼𝘂𝗽𝘀 𝘁𝗵𝗿𝗼𝘂𝗴𝗵 𝘁𝗵𝗲 𝗻𝗲𝘄 𝗧𝗲𝗹𝗲𝗴𝗿𝗮𝗺'𝘀 𝘃𝗼𝗶𝗰𝗲 𝗰𝗵𝗮𝘁𝘀 𝐩𝐨𝐰𝐞𝐫𝐞𝐝 𝐛𝐲 @jass3212 !**
 
 **𝗙𝗶𝗻𝗱 𝗼𝘂𝘁 𝗮𝗹𝗹 𝘁𝗵𝗲 𝗕𝗼𝘁'𝘀 𝗰𝗼𝗺𝗺𝗮𝗻𝗱𝘀 𝗮𝗻𝗱 𝗵𝗼𝘄 𝘁𝗵𝗲𝘆 𝘄𝗼𝗿𝗸 𝗯𝘆 𝗰𝗹𝗶𝗰𝗸𝗶𝗻𝗴 𝗼𝗻 𝘁𝗵𝗲 » 📚 𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀 𝗯𝘂𝘁𝘁𝗼𝗻 !**
 
@@ -52,19 +52,19 @@ async def start_(client: Client, message: Message):
                          "Commands", callback_data="cbcmds"
                     ),
                     InlineKeyboardButton(
-                        "Owner", url=f"https://t.me/tithonus")
+                        "Owner", url=f"https://t.me/jass3212")
                 ],[
                     InlineKeyboardButton(
-                        "Help desk", url=f"https://t.me/stylishuser"
+                        "Help desk", url=f"https://t.me/JasmineSupportGroup"
                     ),
                     InlineKeyboardButton(
-                        "Offical channel", url=f"https://t.me/monstar_0")
+                        "Offical channel", url=f"https://t.me/jass_robot_query")
                 ],[
                     InlineKeyboardButton(
-                        "Chatting group", url="https://t.me/EnglishChatting_Club")
+                        "Chatting group", url="https://t.me/linkchatting")
                 ],[
                     InlineKeyboardButton(
-                        "Create your own bot", url="https://github.com/mohsinhsn/popcorn-music2"
+                        "Create your own bot", url="https://github.com/Jaspreet000/jasmine-music"
                     )
                 ]
             ]
@@ -84,10 +84,10 @@ async def start(client: Client, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "✨Group", url=f"https://t.me/stylishuser"
+                        "✨Group", url=f"https://t.me/JasmineSupportGroup"
                     ),
                     InlineKeyboardButton(
-                        "📣Channel", url=f"https://t.me/monstar_0"
+                        "📣Channel", url=f"https://t.me/jass_robot_query"
                     )
                 ]
             ]
@@ -99,7 +99,7 @@ async def help(client: Client, message: Message):
     await message.reply_text(
         f"""<b>👋🏻 **Hello** {message.from_user.mention()}</b>
 
-**Please press the button below to read the explanation and see the list of available commands powered By Xplayer!**
+**Please press the button below to read the explanation and see the list of available commands powered By Jasmine 2.0!**
 
 ⚡ __Powered by {BOT_NAME} """,
         reply_markup=InlineKeyboardMarkup(
